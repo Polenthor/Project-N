@@ -4,7 +4,7 @@ import NotFound from './NotFound'
 
 const N = () => {
     useEffect(() => {
-    document.title = "My New Title";
+    document.title = "Singum";
   }, []);
   return (
     <div><h1 clase="title" >Surprise !  </h1>
