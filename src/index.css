@@ -6,7 +6,8 @@
   color-scheme: light dark;
   color: rgba(255, 255, 255, 0.87);
   background-color: #000000;
-  background-image: url("/bg.jpg");
+ 
+
    
 
   font-synthesis: none;
@@ -24,13 +25,7 @@ a:hover {
   color: #535bf2;
 }
 
-body {
-  margin: 0;
-  display: flex;
-  place-items: center;
-  min-width: 320px;
-  min-height: 100vh;
-}
+
 
 h1 {
   font-size: 3.2em;
@@ -68,4 +63,57 @@ button:focus-visible {
     background-color: #f9f9f9;
   }
   
+}
+body {
+  margin: 0;
+  min-width: 320px;
+  min-height: 100vh;
+  background: url("/bg.jpg");
+}
+
+/* REMOVE background image ONLY for video page */
+.video-page {
+  min-height: 100vh;
+  position: relative;
+  background: transparent;
+  overflow-y: auto;
+}
+
+/* Background video (VISIBLE NOW) */
+.bg-video {
+  position: fixed;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+
+  z-index: 0;
+  pointer-events: none;
+}
+
+.content {
+  position: relative;
+  z-index: 1;
+  padding: 120px 20px;
+
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 20px;
+
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+/* Images */
+.content img {
+  width: 100%;
+  height: auto;
+  border-radius: 12px;
+  object-fit: cover;
+}
+
+
+.video-page,
+.video-page * {
+  background-image: none !important;
 }
