@@ -45,7 +45,6 @@ useEffect(() => {
  <video
   className="bg-video"
   autoPlay
-  muted
   loop
   playsInline
 >
@@ -55,7 +54,7 @@ useEffect(() => {
 
 
       {/* BACKGROUND MUSIC */}
-      <audio src="/music.mp3" autoPlay loop />
+   {/*  <audio src="/music.mp3" autoPlay loop />*/}
 
     <div className="content">
 
