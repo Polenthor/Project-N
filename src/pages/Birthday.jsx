@@ -83,6 +83,14 @@ useEffect(() => {
           alignSelf:"center"
         }}
       />
+      <img
+        src="/2B048119-8660-436C-8379-510B40687BCD.jpeg"
+        alt='2B048119-8660-436C-8379-510B40687BCD'
+        style={{
+          width: "300px",
+          alignSelf:"center"
+        }}
+      />
     </div>
       <h1></h1>
       
